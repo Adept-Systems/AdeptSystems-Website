@@ -40,7 +40,7 @@ export function Footer() {
           </p>
           <div className="leading-relaxed sm:text-right">
             <p>Created By Rahul Manchanda Izquierdo</p>
-            <p>Universitat de Maryland, College Park</p>
+            <p>University of Maryland, College Park</p>
             <p>
               <a
                 href="mailto:rman7411@gmail.com"

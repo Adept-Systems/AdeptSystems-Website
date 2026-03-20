@@ -1,7 +1,7 @@
 export function HeroVisual() {
   return (
     <div className="relative h-[360px] w-full overflow-visible sm:h-[430px]">
-      <div className="absolute left-6 top-8 w-[76%] -rotate-6 rounded-2xl border border-zinc-300/80 bg-white/88 p-5 shadow-[0_18px_34px_-20px_rgba(0,0,0,0.35)] backdrop-blur dark:border-white/20 dark:bg-zinc-100/10 dark:shadow-[0_18px_40px_-18px_rgba(0,0,0,0.85)]">
+      <div className="absolute left-6 top-8 w-[76%] -rotate-6 rounded-2xl border border-zinc-300/80 bg-white/88 p-5 backdrop-blur dark:border-white/20 dark:bg-zinc-100/10">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500 dark:text-amber-200/90">
           Discovery
         </p>
@@ -10,7 +10,7 @@ export function HeroVisual() {
         </p>
       </div>
 
-      <div className="absolute right-4 top-38 w-[72%] rotate-3 rounded-2xl border border-zinc-300/80 bg-white/88 p-5 shadow-[0_20px_36px_-22px_rgba(0,0,0,0.35)] backdrop-blur dark:border-white/20 dark:bg-zinc-200/10 dark:shadow-[0_22px_45px_-20px_rgba(0,0,0,0.9)]">
+      <div className="absolute right-4 top-38 w-[72%] rotate-3 rounded-2xl border border-zinc-300/80 bg-white/88 p-5 backdrop-blur dark:border-white/20 dark:bg-zinc-200/10">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500 dark:text-amber-200/90">
           Pilot
         </p>
@@ -19,7 +19,7 @@ export function HeroVisual() {
         </p>
       </div>
 
-      <div className="absolute bottom-6 left-8 w-[64%] -rotate-2 rounded-2xl border border-zinc-300/80 bg-white/88 p-5 shadow-[0_20px_38px_-22px_rgba(0,0,0,0.35)] backdrop-blur dark:border-white/20 dark:bg-zinc-300/10 dark:shadow-[0_20px_42px_-20px_rgba(0,0,0,0.88)]">
+      <div className="absolute bottom-6 left-8 w-[64%] -rotate-2 rounded-2xl border border-zinc-300/80 bg-white/88 p-5 backdrop-blur dark:border-white/20 dark:bg-zinc-300/10">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500 dark:text-amber-200/90">
           Scale
         </p>

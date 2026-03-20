@@ -62,7 +62,7 @@ export function Process() {
           {siteConfig.processSteps.map((step, index) => (
             <div key={step} className="relative">
               <div className="flex flex-col items-center text-center lg:block lg:text-left">
-                <div className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-[var(--border)] bg-[var(--surface)] text-[var(--primary)] shadow-[0_10px_20px_-14px_rgba(0,0,0,0.8)]">
+                <div className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-[var(--border)] bg-[var(--surface)] text-[var(--primary)]">
                   {getStepIcon(index)}
                 </div>
                 <div className="lg:mt-4">

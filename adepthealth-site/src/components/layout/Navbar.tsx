@@ -13,7 +13,7 @@ export function Navbar() {
   const isActiveLink = (href: string) =>
     href.includes("#") ? pathname === href.split("#")[0] : pathname === href;
   const activePillClasses =
-    "bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm shadow-black/25 border border-transparent";
+    "bg-[var(--primary)] text-[var(--primary-foreground)] border border-transparent";
   const idlePillClasses =
     "bg-transparent text-[var(--foreground)] hover:bg-[var(--surface)] hover:ring-1 hover:ring-[var(--border)]";
 
@@ -22,7 +22,7 @@ export function Navbar() {
       <Container>
         <nav
           aria-label="Main navigation"
-          className="mx-auto w-full rounded-[36px] border border-neutral-300/60 bg-[color:rgb(255_255_255_/_0.58)] px-4 py-3.5 shadow-[0_14px_40px_-28px_rgba(0,0,0,0.9)] backdrop-blur-xl dark:border-white/15 dark:bg-[color:rgb(20_20_20_/_0.62)] sm:px-6"
+          className="mx-auto w-full rounded-[36px] border border-neutral-300/60 bg-[color:rgb(255_255_255_/_0.58)] px-4 py-3.5 backdrop-blur-xl dark:border-white/15 dark:bg-[color:rgb(20_20_20_/_0.62)] sm:px-6"
         >
           <div className="flex flex-wrap items-center justify-between gap-2">
             <Link

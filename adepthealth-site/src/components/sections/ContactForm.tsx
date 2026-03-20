@@ -147,7 +147,7 @@ export function ContactForm() {
             <ul
               role="listbox"
               aria-labelledby="reason"
-              className="absolute z-30 mt-2 w-full rounded-xl border bg-[var(--surface)] p-1 shadow-[0_16px_30px_-20px_rgba(0,0,0,0.8)]"
+              className="absolute z-30 mt-2 w-full rounded-xl border bg-[var(--surface)] p-1"
             >
               {siteConfig.contactReasons.map((item) => {
                 const isSelected = form.reason === item;

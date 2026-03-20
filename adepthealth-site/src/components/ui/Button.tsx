@@ -16,7 +16,7 @@ const baseClasses =
 
 const variantClasses = {
   primary:
-    "border border-transparent bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm shadow-black/25 hover:-translate-y-0.5 hover:brightness-105 focus-visible:outline-[var(--primary)]",
+    "border border-transparent bg-[var(--primary)] text-[var(--primary-foreground)] hover:-translate-y-0.5 hover:brightness-105 focus-visible:outline-[var(--primary)]",
   secondary:
     "border border-[var(--border)] bg-[var(--surface-muted)] text-[var(--foreground)] hover:-translate-y-0.5 hover:bg-[var(--surface)] focus-visible:outline-[var(--primary)]",
 } as const;
