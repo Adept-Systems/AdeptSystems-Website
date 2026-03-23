@@ -15,8 +15,8 @@ type Segment = {
 
 export const siteConfig = {
   companyName: "Adept Systems",
-  contactEmail: "contact@adepthealth.ai",
-  contactMailto: "mailto:contact@adepthealth.ai",
+  contactEmail: "contact@adeptsystems.ai",
+  contactMailto: "mailto:contact@adeptsystems.ai",
   adeptHealthUrl: "https://adepthealth.ai",
   navLinks: [
     { label: "Contact", href: "/#contact" },
