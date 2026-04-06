@@ -135,10 +135,10 @@ async function sendContactEmail(payload: {
   const escapedMessage = escapeHtml(payload.message).replaceAll("\n", "<br />");
 
   const emailResult = await resend.emails.send({
-    from: "Adept Systems <onboarding@resend.dev>",
+    from: "Adept Systems <contact@adeptsystems.ai>",
     to: destinationEmail,
     replyTo: payload.email,
-    subject: `New Adept Systems inquiry: ${payload.reason}`,
+    subject: "New contact form submission",
     text: [
       `Name: ${payload.name}`,
       `Email: ${payload.email}`,
@@ -149,7 +149,7 @@ async function sendContactEmail(payload: {
       payload.message,
     ].join("\n"),
     html: `
-      <h1>New Adept Systems inquiry</h1>
+      <h1>New contact form submission</h1>
       <p><strong>Name:</strong> ${escapeHtml(payload.name)}</p>
       <p><strong>Email:</strong> ${escapeHtml(payload.email)}</p>
       <p><strong>Organization:</strong> ${escapeHtml(payload.organization || "Not provided")}</p>
