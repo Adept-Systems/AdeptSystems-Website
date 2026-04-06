@@ -7,6 +7,9 @@ import { ContactSection } from "@/src/components/sections/ContactSection";
 import { ContactScrollSync } from "@/src/components/sections/ContactScrollSync";
 import { AgenticWorkforce } from "@/src/components/sections/AgenticWorkforce";
 import { Team } from "@/src/components/sections/Team";
+import { StatsStrip } from "@/src/components/sections/StatsStrip";
+import { HowItWorks } from "@/src/components/sections/HowItWorks";
+import { ComparisonTable } from "@/src/components/sections/ComparisonTable";
 import { siteConfig } from "@/src/lib/site";
 
 export const metadata: Metadata = {
@@ -19,11 +22,14 @@ export default function HomePage() {
     <div className="pb-8 sm:pb-12">
       <ContactScrollSync />
       <Hero />
+      <StatsStrip />
       <Trust />
       <ServicesPreview />
       <AgenticWorkforce />
+      <HowItWorks />
       <Outcomes />
       <Team />
+      <ComparisonTable />
       <ContactSection />
     </div>
   );

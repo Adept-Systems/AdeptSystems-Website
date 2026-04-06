@@ -149,12 +149,58 @@ footer {
   animation: capabilitySweep 1.2s ease;
 }
 
+.reveal-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.process-step-line {
+  position: absolute;
+  top: 1.45rem;
+  left: calc(100% - 0.25rem);
+  width: calc(100% - 1.5rem);
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(245, 158, 11, 0.28) 0%,
+    rgba(245, 158, 11, 0.08) 100%
+  );
+}
+
+.process-step-line::after {
+  content: "";
+  position: absolute;
+  right: -0.2rem;
+  top: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 1px solid rgba(245, 158, 11, 0.45);
+  border-right: 1px solid rgba(245, 158, 11, 0.45);
+  transform: translateY(-50%) rotate(45deg);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .process-arrow-x,
   .process-arrow-y,
   .capability-panel,
+  .reveal-item,
   .capability-panel:hover .capability-scan {
     animation: none !important;
     transition: none !important;
+  }
+
+  .reveal-item {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
