@@ -54,8 +54,8 @@ export function Outcomes() {
                 The delivery stack behind each build.
               </h2>
               <p className="max-w-xl text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 sm:text-base">
-                Adept Systems combines strategy, workflow design, prototyping,
-                and applied ML into one compact execution model.
+                Adept Systems combines agent architecture, multi-agent orchestration,
+                workflow design, and live deployment into one compact execution model.
               </p>
             </div>
           </div>

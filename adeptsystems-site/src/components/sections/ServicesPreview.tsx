@@ -9,8 +9,8 @@ export function ServicesPreview() {
       <Container>
         <SectionHeading
           eyebrow="What We Build"
-          title="Applied systems for organizations that need execution, not theory."
-          description="Adept Systems develops focused solutions at the intersection of AI, operations, and industry execution."
+          title="Agentic systems for teams that need execution, not theory."
+          description="Adept Systems builds agentic AI, autonomous workflows, and rapid implementation paths that move from scoping to live deployment."
         />
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {siteConfig.coreServices.map((item) => (

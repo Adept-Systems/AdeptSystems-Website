@@ -15,56 +15,66 @@ type Segment = {
 
 export const siteConfig = {
   companyName: "Adept Systems",
+  siteDescription:
+    "Adept Systems builds and deploys agentic AI systems for organizations that need execution, not theory. Autonomous agents, workflow automation, and rapid implementation.",
   contactEmail: "contact@adeptsystems.ai",
   contactMailto: "mailto:contact@adeptsystems.ai",
   adeptHealthUrl: "https://adepthealth.ai",
-  navLinks: [
-    { label: "Contact", href: "/#contact" },
-  ] satisfies readonly NavLink[],
+  hero: {
+    title: "Agentic AI systems, built to execute.",
+    description:
+      "Adept Systems builds and deploys agentic AI systems that plan, act, and complete multi-step work across real operations. We move from scoping to live deployment fast. No slide decks. No stalled discovery loops. Just agent-driven systems working alongside your team.",
+    tags: [
+      "Agentic AI",
+      "Autonomous workflows",
+      "Rapid deployment",
+    ],
+  },
+  navLinks: [{ label: "Contact", href: "/#contact" }] satisfies readonly NavLink[],
   coreServices: [
     {
-      title: "Applied AI strategy",
+      title: "Agentic AI systems",
       description:
-        "Shape practical roadmaps, evaluate where AI fits, and prioritize initiatives that can move from concept to execution.",
+        "We design and deploy autonomous agents that plan, reason, and execute multi-step workflows with minimal human intervention. From focused agents to coordinated multi-agent orchestration, we build systems that act.",
     },
     {
-      title: "Workflow systems",
+      title: "Workflow automation",
       description:
-        "Design and implement tools, automations, and operating models that reduce friction across complex business processes.",
+        "We map your highest-friction processes and replace manual coordination with agent-driven workflows. That means faster throughput, fewer handoffs, and execution capacity that scales with demand.",
     },
     {
-      title: "Digital product delivery",
+      title: "Rapid implementation",
       description:
-        "Build focused products, prototypes, and implementation frameworks that help teams ship with more confidence.",
+        "We move from scoping to working software fast. No prolonged discovery cycles. No shelfware. We build alongside your team and stay close until the agentic system is live and producing results.",
     },
   ],
   capabilities: [
     {
-      title: "AI Strategy",
+      title: "Agent architecture",
       description:
-        "Translate ambition into a clear roadmap, investment thesis, and sequence of execution.",
+        "Design autonomous agents with the right goals, tools, permissions, and controls so agentic systems can operate reliably in production.",
     },
     {
-      title: "Workflow Automation",
+      title: "Agent-driven workflows",
       description:
-        "Modernize repetitive processes with systems that improve speed, consistency, and team capacity.",
+        "Turn fragmented process steps into agent-driven workflows that carry context across tasks and keep execution moving without constant intervention.",
     },
     {
-      title: "Product Prototyping",
+      title: "Multi-agent orchestration",
       description:
-        "Validate concepts quickly with usable prototypes that clarify scope, workflows, and value.",
+        "Coordinate specialized agents across intake, analysis, decisions, and follow-through so work moves through a structured agentic pipeline.",
     },
     {
-      title: "Applied ML Systems",
+      title: "Live deployment",
       description:
-        "Develop practical model-enabled solutions tied to real operational use cases.",
+        "Ship quickly into real environments, connect to your systems, and manage performance so autonomous workflows deliver value in day-to-day operations.",
     },
   ],
   segments: [
     {
       title: "Adept Health",
       description:
-        "AI strategy, workflow modernization, and implementation support for healthcare organizations.",
+        "Agentic AI systems, workflow modernization, and implementation support for healthcare organizations.",
       ctaLabel: "Visit adepthealth.ai",
       ctaHref: "https://adepthealth.ai",
       featured: true,
@@ -73,88 +83,98 @@ export const siteConfig = {
     {
       title: "Operations",
       description:
-        "Workflow systems and applied automation for teams managing high-volume coordination, delivery, and execution.",
+        "Agent-driven workflows for teams managing high-volume coordination, delivery, and execution across complex operations.",
     },
     {
       title: "Enterprise Tools",
       description:
-        "Internal platforms and operator-facing products that connect fragmented processes and decision-making.",
+        "Internal platforms, autonomous agents, and operator-facing systems that connect fragmented processes and decisions.",
     },
     {
       title: "Finance",
       description:
-        "Structured data, review workflows, and implementation frameworks for risk-aware financial operations.",
+        "Agentic review workflows, structured data systems, and implementation support for risk-aware financial operations.",
+    },
+    {
+      title: "Agentic Workforce",
+      description:
+        "Deploy coordinated AI agents across revenue, operations, and support functions. We scope, build, and manage the agent layer that works alongside your team.",
+    },
+    {
+      title: "SMB Automation",
+      description:
+        "Practical agentic AI for small and mid-sized businesses. We make enterprise-grade agent infrastructure accessible without enterprise complexity or cost.",
     },
   ] satisfies readonly Segment[],
   processSteps: ["Discover", "Build", "Deploy", "Improve"],
   processBlurbs: {
     Discover:
-      "We define the operating problem, map the constraints, and align around where systems work can create leverage.",
+      "We define the operating problem, identify where agentic systems can take ownership, and align on the workflows ready for autonomous execution.",
     Build:
-      "We turn direction into prototypes, workflows, and implementation-ready products with tight feedback loops.",
+      "We turn scope into working agents, orchestration logic, and agent-driven workflows with tight feedback loops from your team.",
     Deploy:
-      "We launch into real environments with practical governance, ownership, and adoption built into the rollout.",
+      "We launch into real environments, connect the agent layer to your systems, and put the right controls around live execution.",
     Improve:
-      "We refine performance, strengthen the operating model, and expand what works without losing control.",
+      "We tune performance, expand successful workflows, and strengthen the operating model as your autonomous agent layer matures.",
   },
   principles: [
-    "Practical over performative",
-    "Built for operators",
-    "Structured execution",
-    "Reusable systems thinking",
+    "Agentic systems built to execute",
+    "Autonomous workflows with controls",
+    "Fast implementation over theater",
+    "Built alongside operators",
   ],
   servicePageItems: [
     {
-      title: "AI strategy and roadmap design",
+      title: "Agentic AI strategy and scoping",
       description:
-        "Prioritize initiatives, define sequencing, and connect AI bets to operating realities.",
+        "Prioritize the workflows best suited for autonomous agents, define sequencing, and connect agentic bets to operational realities.",
     },
     {
-      title: "Workflow architecture and automation",
+      title: "Autonomous workflow design",
       description:
-        "Redesign high-friction processes with cleaner handoffs, automation, and decision support.",
+        "Redesign high-friction processes into agent-driven workflows with cleaner handoffs, stronger context retention, and faster execution.",
     },
     {
-      title: "Prototype and MVP development",
+      title: "Agent prototype and pilot builds",
       description:
-        "Build focused tools that test usability, technical feasibility, and organizational fit.",
+        "Build focused agentic systems that test usability, system fit, and operational value before broader rollout.",
     },
     {
-      title: "Implementation planning",
+      title: "Multi-agent orchestration",
       description:
-        "Establish the roles, milestones, controls, and rollout structure needed to launch responsibly.",
+        "Stand up coordinated agent teams with distinct roles, shared context, and clear controls across complex business processes.",
     },
     {
-      title: "Operating model and governance support",
+      title: "Implementation and rollout",
       description:
-        "Create the review rhythms, ownership model, and guardrails that keep initiatives effective over time.",
+        "Establish the integrations, ownership model, review loops, and deployment structure needed to launch autonomous agents responsibly.",
     },
     {
-      title: "Segment-specific solution design",
+      title: "Segment-specific agent systems",
       description:
-        "Adapt a common systems platform into focused offerings for healthcare and other industry contexts.",
+        "Adapt a reusable agentic platform into focused offerings for healthcare, SMB automation, and other industry contexts.",
     },
   ],
   faqs: [
     {
       question: "What does Adept Systems actually build?",
       answer:
-        "We work across strategy, implementation, and product delivery. That can mean shaping an AI roadmap, prototyping a workflow tool, or helping a team stand up the operating system around a new initiative.",
+        "We build agentic AI systems that execute real work. That can mean autonomous agents, multi-agent orchestration, agent-driven workflows, or the implementation layer required to get those systems live inside your operation.",
     },
     {
       question: "Do you only work in healthcare?",
       answer:
-        "No. Adept Health is one operating segment under the broader Adept Systems umbrella. The parent company focuses more broadly on applied AI, workflow systems, and digital products across industries.",
+        "No. Adept Health is one operating segment under the broader Adept Systems umbrella. We also build agentic systems for operations, finance, SMB automation, and other execution-heavy environments.",
     },
     {
       question: "How do engagements usually start?",
       answer:
-        "Most work starts with a discovery phase to clarify the problem, current constraints, stakeholders, and implementation path. From there we define the right scope for strategy support, a prototype, or a more complete build.",
+        "Most engagements start with a focused scoping phase. We map the workflow, identify where autonomous agents can own execution, and move quickly into a working build rather than a long advisory cycle.",
     },
     {
       question: "Can you work with our internal team or vendors?",
       answer:
-        "Yes. We can work as a focused delivery partner alongside internal operators, product teams, engineering groups, or outside vendors. The goal is to complement existing capabilities, not force unnecessary resets.",
+        "Yes. We work alongside operators, product teams, engineers, and outside vendors. The goal is to add a coordinated agent layer that fits your environment and helps your team execute with more continuity.",
     },
   ],
   testimonials: [
@@ -175,9 +195,9 @@ export const siteConfig = {
     },
   ],
   contactReasons: [
-    "AI strategy and roadmap",
-    "Workflow systems",
-    "Prototype or product build",
+    "Agentic AI system build",
+    "Autonomous workflow design",
+    "Multi-agent orchestration",
     "Segment partnership",
     "General inquiry",
   ],

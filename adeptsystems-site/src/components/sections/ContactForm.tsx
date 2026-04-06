@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useRef, useState } from "react";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { Button } from "@/src/components/ui/Button";
 import { siteConfig } from "@/src/lib/site";
 
@@ -27,7 +28,11 @@ export function ContactForm() {
   const [status, setStatus] = useState<string>("");
   const [submitting, setSubmitting] = useState(false);
   const [isReasonOpen, setIsReasonOpen] = useState(false);
+  const [cfTurnstileToken, setCfTurnstileToken] = useState("");
   const reasonMenuRef = useRef<HTMLDivElement | null>(null);
+  const turnstileRef = useRef<TurnstileInstance | undefined>(undefined);
+  const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+  const isCaptchaReady = Boolean(cfTurnstileToken);
   const fieldClasses =
     "mt-1 w-full rounded-xl border bg-[var(--surface)] px-3 py-2 text-sm transition focus:outline-none focus:ring-2 focus:ring-amber-300/25 focus:border-amber-300/60";
 
@@ -45,6 +50,16 @@ export function ContactForm() {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (!turnstileSiteKey) {
+      setStatus("Captcha is not configured. Please use email as a fallback.");
+      return;
+    }
+
+    if (!cfTurnstileToken) {
+      setStatus("Please complete the captcha before submitting.");
+      return;
+    }
+
     setSubmitting(true);
     setStatus("");
 
@@ -52,7 +67,7 @@ export function ContactForm() {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, cfTurnstileToken }),
       });
 
       const data = (await response.json()) as { message?: string };
@@ -62,6 +77,8 @@ export function ContactForm() {
       } else {
         setStatus("Message sent. We will reply shortly.");
         setForm(initialState);
+        setCfTurnstileToken("");
+        turnstileRef.current?.reset();
       }
     } catch {
       setStatus("Network error. Please use email as a fallback.");
@@ -205,8 +222,35 @@ export function ContactForm() {
         this form.
       </p>
 
+      <div className="space-y-2">
+        {turnstileSiteKey ? (
+          <Turnstile
+            ref={turnstileRef}
+            siteKey={turnstileSiteKey}
+            onSuccess={(token) => {
+              setCfTurnstileToken(token);
+              setStatus("");
+            }}
+            onExpire={() => setCfTurnstileToken("")}
+            onError={() => {
+              setCfTurnstileToken("");
+              setStatus("Captcha verification failed. Please try again.");
+            }}
+            options={{
+              theme: "auto",
+              size: "flexible",
+            }}
+          />
+        ) : (
+          <p className="text-sm text-amber-700 dark:text-amber-300">
+            Captcha is not configured yet. Use email as a fallback until
+            `NEXT_PUBLIC_TURNSTILE_SITE_KEY` is set.
+          </p>
+        )}
+      </div>
+
       <div className="flex items-center gap-3">
-        <Button type="submit" disabled={submitting}>
+        <Button type="submit" disabled={submitting || !isCaptchaReady}>
           {submitting ? "Sending..." : "Send message"}
         </Button>
         <a

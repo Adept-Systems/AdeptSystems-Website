@@ -5,11 +5,13 @@ import { Outcomes } from "@/src/components/sections/Outcomes";
 import { Trust } from "@/src/components/sections/Trust";
 import { ContactSection } from "@/src/components/sections/ContactSection";
 import { ContactScrollSync } from "@/src/components/sections/ContactScrollSync";
+import { AgenticWorkforce } from "@/src/components/sections/AgenticWorkforce";
+import { Team } from "@/src/components/sections/Team";
+import { siteConfig } from "@/src/lib/site";
 
 export const metadata: Metadata = {
   title: "Adept Systems",
-  description:
-    "A parent company building applied AI, workflow systems, and digital products.",
+  description: siteConfig.siteDescription,
 };
 
 export default function HomePage() {
@@ -19,7 +21,9 @@ export default function HomePage() {
       <Hero />
       <Trust />
       <ServicesPreview />
+      <AgenticWorkforce />
       <Outcomes />
+      <Team />
       <ContactSection />
     </div>
   );
