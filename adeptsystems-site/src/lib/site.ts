@@ -23,12 +23,12 @@ export const siteConfig = {
   hero: {
     title: "Agentic AI systems, built to execute.",
     description:
-      "Adept Systems builds and deploys agentic AI systems for private equity teams, SMBs, nonprofits, and other organizations that need execution across real operations. We design digital workflows where autonomous agents move work from one step to the next with context intact. We move from scoping to live deployment fast. No slide decks. No stalled discovery loops. Just agent-driven systems working alongside your team.",
+      "Adept Systems builds and deploys agentic AI systems for private equity firms, healthcare providers, venture-backed startups, SMBs, nonprofits, and other organizations that need execution across real operations. We design digital workflows where autonomous agents move work from one step to the next with context intact. We move from scoping to live deployment fast. No slide decks. No stalled discovery loops. Just agent-driven systems working alongside your team.",
     tags: [
       "Agentic AI",
-      "Private equity",
-      "SMBs",
-      "Nonprofits",
+      "Private Equity Firms",
+      "Healthcare Providers",
+      "Venture-Backed Startups",
       "Digital workforce",
       "Autonomous workflows",
       "Rapid deployment",
