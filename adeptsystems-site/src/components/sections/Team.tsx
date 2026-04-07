@@ -5,13 +5,13 @@ import { Card } from "@/src/components/ui/Card";
 const teamMembers = [
   {
     name: "Roopak Manchanda",
-    role: "Co-Founder",
-    bio: "Brings deep operational and strategic expertise to Adept Systems.",
+    role: "Founding Partner",
+    bio: "Brings deep operational and strategic expertise to Adept Systems. He has built and sold a company from the ground up and brings that founder perspective to execution, growth, and long-term business design.",
   },
   {
     name: "Rahul Manchanda-Izquierdo",
-    role: "Co-Founder",
-    bio: "Leads product, engineering, and AI implementation at Adept Systems.",
+    role: "CTO",
+    bio: "Leads product, engineering, and AI implementation at Adept Systems. He focuses on turning agentic concepts into working systems, digital workflows, and production-ready software that teams can operate with confidence.",
   },
 ];
 

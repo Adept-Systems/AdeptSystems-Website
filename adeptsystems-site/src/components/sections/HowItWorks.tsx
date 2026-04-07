@@ -10,6 +10,13 @@ const steps = siteConfig.processSteps.map((step) => ({
   description: siteConfig.processBlurbs[step],
 }));
 
+const stepTimelines = [
+  "Days 1-3",
+  "Week 1",
+  "Weeks 2-4",
+  "Post-launch",
+];
+
 export function HowItWorks() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [isVisible, setIsVisible] = useState(() => {
@@ -57,6 +64,9 @@ export function HowItWorks() {
               {index < steps.length - 1 ? (
                 <div className="process-step-line hidden lg:block" />
               ) : null}
+              <div className="mb-4 inline-flex rounded-full border border-[color:rgb(245_158_11_/_0.18)] bg-[color:rgb(245_158_11_/_0.08)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--primary)]">
+                {stepTimelines[index]}
+              </div>
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--primary)] text-sm font-semibold text-[var(--primary-foreground)]">
                   {index + 1}

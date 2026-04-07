@@ -23,9 +23,13 @@ export const siteConfig = {
   hero: {
     title: "Agentic AI systems, built to execute.",
     description:
-      "Adept Systems builds and deploys agentic AI systems that plan, act, and complete multi-step work across real operations. We move from scoping to live deployment fast. No slide decks. No stalled discovery loops. Just agent-driven systems working alongside your team.",
+      "Adept Systems builds and deploys agentic AI systems for private equity teams, SMBs, nonprofits, and other organizations that need execution across real operations. We design digital workflows where autonomous agents move work from one step to the next with context intact. We move from scoping to live deployment fast. No slide decks. No stalled discovery loops. Just agent-driven systems working alongside your team.",
     tags: [
       "Agentic AI",
+      "Private equity",
+      "SMBs",
+      "Nonprofits",
+      "Digital workforce",
       "Autonomous workflows",
       "Rapid deployment",
     ],
@@ -72,13 +76,9 @@ export const siteConfig = {
   ],
   segments: [
     {
-      title: "Adept Health",
+      title: "Revenue Generation",
       description:
-        "Agentic AI systems, workflow modernization, and implementation support for healthcare organizations.",
-      ctaLabel: "Visit adepthealth.ai",
-      ctaHref: "https://adepthealth.ai",
-      featured: true,
-      external: true,
+        "Agent-driven workflows for marketing and sales teams that need faster pipeline movement, sharper follow-up, and more consistent revenue execution across the funnel.",
     },
     {
       title: "Operations",
@@ -104,6 +104,16 @@ export const siteConfig = {
       title: "SMB Automation",
       description:
         "Practical agentic AI for small and mid-sized businesses. We make enterprise-grade agent infrastructure accessible without enterprise complexity or cost.",
+    },
+    {
+      title: "HR and Administration",
+      description:
+        "Agent-driven workflows for recruiting, onboarding, internal support, documentation, and the administrative work that keeps teams moving.",
+    },
+    {
+      title: "Adept Health",
+      description:
+        "Agentic AI systems, workflow modernization, and implementation support for healthcare organizations.",
     },
   ] satisfies readonly Segment[],
   processSteps: ["Discover", "Build", "Deploy", "Improve"],
