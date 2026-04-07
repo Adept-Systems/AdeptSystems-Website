@@ -6,7 +6,7 @@ const teamMembers = [
   {
     name: "Roopak Manchanda",
     role: "Founding Partner",
-    bio: "Brings deep operational and strategic expertise to Adept Systems. He has built and sold a company from the ground up and brings that founder perspective to execution, growth, and long-term business design.",
+    bio: "Brings deep operational and strategic expertise to Adept Systems. He is a serial founder and brings that founder perspective to execution, growth, and long-term business design.",
   },
   {
     name: "Rahul Manchanda-Izquierdo",
